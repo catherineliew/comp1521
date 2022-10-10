@@ -1,0 +1,9 @@
+if number starts with
+0x    then hexadecimal e.g. 0x123
+0     then octal e.g. 043
+otherwise decimal
+no binary literals
+
+printf("%d == 0%o == 0x%x", 100, 100, 100)
+
+will print 100 == 0144 == 0x64
