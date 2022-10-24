@@ -4,13 +4,26 @@ a == 0101 0101 0101 0101
 b == 1010 1010 1010 1010
 c == 0000 0000 0000 0001
 
-a | b (bitwise OR) 	1111 1111 1111 1111
-a & b (bitwise AND)	0000 0000 0000 0000
-a ^ b (bitwise XOR)	1111 1111 1111 1111
-a & ~b (bitwise AND)	0101 0101 0101 0101
-c << 6 (left shift)	0000 0000 0100 0000
-a >> 4 (right shift)	0000 0101 0101 0101
+a | b (bitwise OR) 	 1111 1111 1111 1111
+a & b (bitwise AND)	 0000 0000 0000 0000
+a ^ b (bitwise XOR)	 1111 1111 1111 1111
+a & ~b (bitwise NOT) 0101 0101 0101 0101
+c << 6 (left shift)	 0000 0000 0100 0000
+a >> 4 (right shift) 0000 0101 0101 0101
 
-| can be used to set bits to 1
-& can be used to set bits to 0
-^ can be used to toggle bits
+
+Notes
+
+only shift unsigned numbers
+
+1010101010101011 
+0000000000000100 |
+OR can be used to set particular bits to 1
+
+1010101010101011 
+1111111111111101 &
+AND can be used to set particular bits to 0
+
+1010101010101011
+0000000000000111 ^
+XOR can be used to toggle particular bits

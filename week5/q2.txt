@@ -1,8 +1,8 @@
 if number starts with
-0x    then hexadecimal e.g. 0x123
-0     then octal e.g. 043
+0x    then it is hexadecimal   e.g. 0x123
+0     then it is octal         e.g. 043
 otherwise decimal
-no binary literals
+no binary constants
 
 printf("%d == 0%o == 0x%x", 100, 100, 100)
 

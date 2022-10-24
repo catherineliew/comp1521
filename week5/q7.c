@@ -24,13 +24,22 @@ int main(void) {
     return 0;
 }
 
-   
+/*
+    for example, when i == 2,
+    we are checking the 3rd bit from the right
+
+   w 01100101011010110010110011001010
+mask 00000000000000000000000000000100 == 1u << i
+
+     00100000000000000000000000000000 == 1u << (INT_SIZE - i -1)
+*/
+
 Word reverseBits(Word w) {
 
     Word result = 0;
     for (int i = 0; i < INT_SIZE; i++) {
         
-        if (w & (1u << i)) { // check if bit is 1
+        if (w & (1u << i)) { // check if i-th bit is 1
         
             // set corresponding bit in result
             result |= (1u << (INT_SIZE - 1 - i));
